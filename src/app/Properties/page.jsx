@@ -2,7 +2,6 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaBuilding, FaRupeeSign, FaExpandArrowsAlt, FaCalendarAlt } from 'react-icons/fa';
 import Header from '../components/Header';
-import RecentProperties from '../components/RecentProperties';
 import PropertyForm from '../components/PropertyForm';
 
 import Footer from '../components/Footer';
@@ -73,7 +72,6 @@ const Properties = () => {
           </div>
         </div>
       </div>
-      <RecentProperties />
       <PropertyForm />
       <Footer />
     </div>

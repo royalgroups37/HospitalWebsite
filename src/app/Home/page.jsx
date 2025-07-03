@@ -3,16 +3,15 @@ import Header from '../components/Header';
 
 import TopImagesection from '../components/TopImagesection';
 
-import ThreeSteps from '../components/ThreeSteps';
 
-import TrustSpace from '../components/TrustSpace';
-import Featurescategory from '../components/Featurescategory';
-import RecentProperties from '../components/RecentProperties';
-import WorkWithus from '../components/WorkWithus';
-import CustomerReview from '../components/CustomerReview';
-import PropertiesByArea from '../components/PropertiesByArea';
-import RecentArticles from '../components/RecentArticles';
-import CallToActionBanners from '../components/CallToActionBanners';
+import WelcomeSection from '../components/WelcomeSection';
+import Services from '../components/OurServices';
+import HowItWorks from '../components/HowItWorks';
+import OurDoctors from '../components/OurDoctors';
+import AboutUs from '../components/AboutUs';
+import StayInformed from '../components/StayInformed';
+import SeeWhoTrustUs from '../components/SeeWhoTrustUs';
+
 
 import Footer from "../components/Footer";
 
@@ -23,17 +22,17 @@ export default function Home() {
       <Header />
       <TopImagesection />
 
-      <TrustSpace />
-      <ThreeSteps />
+      <WelcomeSection />
+      <Services />
+      <OurDoctors />
+
+      <HowItWorks />
+      <AboutUs />
+      <StayInformed />
+
+      <SeeWhoTrustUs />
 
 
-      <Featurescategory />
-      <RecentProperties />
-      <WorkWithus />
-      <CustomerReview/>
-      <PropertiesByArea/>
-      <RecentArticles/>
-      <CallToActionBanners/>
       <Footer />
     </div>
   );
