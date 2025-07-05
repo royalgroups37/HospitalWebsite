@@ -8,7 +8,7 @@ const ServiceDetails = ({ service, onBack }) => {
   if (!service) return <div className="text-center py-20">Service Not Found</div>;
 
   return (
-    <div className="min-h-screen bg-white tracking-wide pt-30">
+    <div className="min-h-screen bg-white tracking-wide">
       <Header />
 
       {/* Top Section */}

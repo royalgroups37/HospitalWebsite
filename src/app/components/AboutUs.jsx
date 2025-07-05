@@ -8,44 +8,44 @@ export default function AboutUs() {
       <div className="relative w-full max-w-[586px] h-[510px]">
         <img
           src="/Homepageaboutus1.jpg"
-          className="w-[284.8px] h-[411.01px] absolute left-[0] top-[19.5px] rounded-3xl object-cover"
+          alt="About 1"
+          className="absolute rounded-3xl object-cover w-[45%] sm:w-[50%] h-[80%] top-[5%] left-0"
         />
-        <div className="w-[284.79px] h-[410.99px]">
-          <img
-            src="/Homepageaboutus2.jpg"
-            className="w-[284.79px] h-[410.99px] absolute left-[301px] top-[118.51px] rounded-3xl object-cover"
-          />
-          <svg
-            width={68}
-            height={67}
-            viewBox="0 0 68 67"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[410px] top-[303.33px]"
-            preserveAspectRatio="none"
-          >
-            <g clipPath="url(#clip0)">
-              <path
-                d="M34.2 62.6c-7.7 0-15.1-3.1-20.6-8.6C8.2 48.6 5.1 41.3 5.1 33.5s3.1-15.1 8.6-20.6C19.1 7.5 26.5 4.5 34.2 4.5s15.1 3.1 20.6 8.6c5.4 5.4 8.5 12.9 8.5 20.4s-3.1 15.1-8.6 20.6c-5.4 5.4-12.8 8.5-20.5 8.5Zm0 4.2c8.8 0 17.3-3.5 23.5-9.7 6.2-6.2 9.7-14.7 9.7-23.5s-3.5-17.3-9.7-23.5c-6.2-6.2-14.7-9.7-23.5-9.7S16.9 3.8 10.7 10c-6.2 6.2-9.7 14.7-9.7 23.5s3.5 17.3 9.7 23.5c6.2 6.2 14.7 9.7 23.5 9.7Z"
-                fill="#FAFAFA"
+        <img
+          src="/Homepageaboutus2.jpg"
+          alt="About 2"
+          className="absolute rounded-3xl object-cover w-[45%] sm:w-[50%] h-[80%] top-[30%] right-0"
+        />
+        <svg
+          width={68}
+          height={67}
+          viewBox="0 0 68 67"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute bottom-0 right-0"
+          preserveAspectRatio="none"
+        >
+          <g clipPath="url(#clip0)">
+            <path
+              d="M34.2 62.6c-7.7 0-15.1-3.1-20.6-8.6C8.2 48.6 5.1 41.3 5.1 33.5s3.1-15.1 8.6-20.6C19.1 7.5 26.5 4.5 34.2 4.5s15.1 3.1 20.6 8.6c5.4 5.4 8.5 12.9 8.5 20.4s-3.1 15.1-8.6 20.6c-5.4 5.4-12.8 8.5-20.5 8.5Zm0 4.2c8.8 0 17.3-3.5 23.5-9.7 6.2-6.2 9.7-14.7 9.7-23.5s-3.5-17.3-9.7-23.5c-6.2-6.2-14.7-9.7-23.5-9.7S16.9 3.8 10.7 10c-6.2 6.2-9.7 14.7-9.7 23.5s3.5 17.3 9.7 23.5c6.2 6.2 14.7 9.7 23.5 9.7Z"
+              fill="#FAFAFA"
+            />
+            <path
+              d="M27 21.3c.3-.2.7-.2 1.1-.2.4 0 .8.1 1.2.4l14.5 10.4c.3.2.6.5.7.8.1.3.2.6.2.9s-.1.6-.2.9c-.1.3-.4.6-.7.8L29.2 45.6c-.3.2-.7.4-1.1.4s-.8-.1-1.2-.3c-.3-.2-.6-.4-.8-.8-.2-.3-.3-.7-.3-1.1V23.2c0-.4.1-.8.3-1.1.2-.4.5-.6.9-.8Z"
+              fill="#FAFAFA"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0">
+              <rect
+                width="66.42"
+                height="66.42"
+                fill="white"
+                transform="translate(0.98 0.33)"
               />
-              <path
-                d="M27 21.3c.3-.2.7-.2 1.1-.2.4 0 .8.1 1.2.4l14.5 10.4c.3.2.6.5.7.8.1.3.2.6.2.9s-.1.6-.2.9c-.1.3-.4.6-.7.8L29.2 45.6c-.3.2-.7.4-1.1.4s-.8-.1-1.2-.3c-.3-.2-.6-.4-.8-.8-.2-.3-.3-.7-.3-1.1V23.2c0-.4.1-.8.3-1.1.2-.4.5-.6.9-.8Z"
-                fill="#FAFAFA"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0">
-                <rect
-                  width="66.42"
-                  height="66.42"
-                  fill="white"
-                  transform="translate(0.98 0.33)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
+            </clipPath>
+          </defs>
+        </svg>
       </div>
 
       {/* Text Content */}
@@ -67,7 +67,7 @@ export default function AboutUs() {
             </svg>
             <p className="text-sm font-bold uppercase text-[#195aff]">About Us</p>
           </div>
-          <p className="text-[28px] md:text-[32px] lg:text-[40px] font-semibold text-[#2c2c2c] capitalize">
+          <p className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-semibold text-[#2c2c2c] capitalize">
             Our Hospital Create a Safe, Your Health Our Priority
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function AboutUs() {
         {/* Vision Cards */}
         <div className="flex flex-col sm:flex-row gap-10">
           {/* Card 1 */}
-          <div className="flex flex-col gap-4 w-full max-w-[232px]">
+          <div className="flex flex-col gap-4 w-full sm:max-w-[232px]">
             <div className="h-16 w-16 flex items-center justify-center rounded-full bg-[#e7edff]">
               <p className="text-2xl text-[#195aff]"></p>
             </div>
@@ -92,7 +92,7 @@ export default function AboutUs() {
           </div>
 
           {/* Card 2 */}
-          <div className="flex flex-col gap-4 w-full max-w-[232px]">
+          <div className="flex flex-col gap-4 w-full sm:max-w-[232px]">
             <div className="h-16 w-16 flex items-center justify-center rounded-full bg-[#e7edff]">
               <p className="text-2xl text-[#195aff]"></p>
             </div>

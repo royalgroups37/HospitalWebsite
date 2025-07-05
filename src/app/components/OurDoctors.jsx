@@ -31,42 +31,48 @@ export default function OurDoctors() {
       </div>
 
       {/* Doctors Cards */}
-      <div className="flex flex-wrap justify-center gap-8">
-        {[
-          {
-            name: 'Dr. John Smith',
-            title: 'Cardiologist',
-            image: '/Homepagedoctor1.jpg',
-          },
-          {
-            name: 'Dr. Sarah Johnson',
-            title: 'Orthopedic Surgeon',
-            image: '/Homepagedoctor2.jpg',
-          },
-          {
-            name: 'Dr. Michael Lee',
-            title: 'Pediatrician',
-            image: '/Homepagedoctor3.jpg',
-          },
-          {
-            name: 'Dr. Emily Davis',
-            title: 'Gynecologist',
-            image: '/Homepagedoctor4.jpg',
-          },
-        ].map((doc, index) => (
-          <div key={index} className="w-full sm:w-[45%] lg:w-[22%] flex flex-col items-center gap-4">
-            <img
-              src={doc.image}
-              alt={doc.name}
-              className="w-full h-[300px] object-cover rounded-2xl shadow-md"
-            />
-            <div className="text-center space-y-1">
-              <p className="text-xl font-medium text-[#031e2d]">{doc.name}</p>
-              <p className="text-base text-[#131313] opacity-70">{doc.title}</p>
-            </div>
-          </div>
-        ))}
+   <div className="flex flex-wrap justify-center gap-8">
+  {[
+    {
+      name: 'Dr. John Smith',
+      title: 'Cardiologist',
+      image: '/Homepagedoctor1.jpg',
+    },
+    {
+      name: 'Dr. Sarah Johnson',
+      title: 'Orthopedic Surgeon',
+      image: '/Homepagedoctor2.jpg',
+    },
+    {
+      name: 'Dr. Michael Lee',
+      title: 'Pediatrician',
+      image: '/Homepagedoctor3.jpg',
+    },
+    {
+      name: 'Dr. Emily Davis',
+      title: 'Gynecologist',
+      image: '/Homepagedoctor4.jpg',
+    },
+  ].map((doc, index) => (
+    <div
+      key={index}
+      className="w-full sm:w-[45%] lg:w-[22%] max-w-sm flex flex-col items-center gap-4"
+    >
+      <div className="w-full aspect-[3/4] overflow-hidden rounded-2xl shadow-md">
+        <img
+          src={doc.image}
+          alt={doc.name}
+          className="w-full h-full object-cover"
+        />
       </div>
+      <div className="text-center space-y-1">
+        <p className="text-xl font-medium text-[#031e2d]">{doc.name}</p>
+        <p className="text-base text-[#131313] opacity-70">{doc.title}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
