@@ -144,6 +144,7 @@ const Ent = () => {
           </ul>
         </div>
       </div>
+      
       <Footer />
 
     </div>

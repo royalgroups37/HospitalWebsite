@@ -19,7 +19,7 @@ export default function DoctorListPage() {
     'Neurology',
     'Ophthalmology',
     'Gastroenterology – Surgical',
-  ];
+  ];  
 
   const handleNavigation = (slug) => {
     // convert to a slug if needed (e.g., lowercase and hyphenated)
