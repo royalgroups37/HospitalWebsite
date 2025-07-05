@@ -70,11 +70,10 @@ export default function DoctorListPage() {
     return (
         <div className=" h-full tracking-wide bg-white" >
             <Header />
-
-            <div className="flex flex-col lg:flex-row w-full max-w-[1440px] mx-auto p-4 md:p-8 gap-6 mt-30">
+            <div className="flex flex-col lg:flex-row w-full max-w-[1440px] mx-auto p-4 md:p-8 gap-6 ">
 
                 {/* Sidebar Filters */}
-                <aside className="w-full lg:w-[280px] bg-white  text-gray-600 rounded-md p-4 flex flex-col gap-4 mt-10">
+                <aside className="w-full lg:w-[280px] bg-white  text-gray-600 rounded-md p-4 flex flex-col gap-4 ">
                     <h2 className="text-lg  text-[#195aff]">FILTERS</h2>
 
                     <input
@@ -116,7 +115,7 @@ export default function DoctorListPage() {
                 </aside>
 
                 {/* Doctors Grid */}
-                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-10">
+                <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full ">
                     {Array.from({ length: 9 }).map((_, i) => (
                         <DoctorCard key={i} />
                     ))}

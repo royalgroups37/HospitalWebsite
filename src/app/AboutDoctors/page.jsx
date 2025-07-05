@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 // Main Page
 export default function AboutDoctors() {
   return (
-    <div className=" h-full tracking-wide bg-white pt-35" >
+    <div className=" h-full tracking-wide bg-white" >
       <Header />
       <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-[1240px] mx-auto p-4 gap-6 bg-white rounded ">
         {/* Image */}

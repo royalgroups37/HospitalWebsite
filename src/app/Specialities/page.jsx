@@ -27,12 +27,12 @@ export default function DoctorListPage() {
     router.push(`/services/${formattedSlug}`);
   };
   return (
-    <div className="min-h-screen bg-white tracking-wide pt-20">
+    <div className="min-h-screen bg-white tracking-wide">
       <Header />
 
-      <div className="flex flex-col lg:flex-row w-full max-w-[1440px] mx-auto px-4 md:px-8 gap-6 mt-10">
+      <div className="flex flex-col lg:flex-row w-full max-w-[1440px] mx-auto px-4 md:px-8 gap-6 ">
         {/* Sidebar Filters */}
-        <aside className="w-full lg:w-[280px] bg-white text-gray-600 rounded-md p-4 flex flex-col gap-4 mt-10">
+        <aside className="w-full lg:w-[280px] bg-white text-gray-600 rounded-md p-4 flex flex-col gap-4 mt-5">
           <h2 className="text-lg font-semibold text-[#195aff]">FILTERS</h2>
 
           <input

@@ -17,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50 transition-all duration-300">
+    <header className="w-full bg-white shadow-md transition-all duration-300">
       {/* Top Bar */}
       <div className="max-w-[1440px] mx-auto flex justify-between items-center px-6 lg:px-20 py-4">
         <p className="text-2xl font-semibold uppercase text-[#1f2b6c]">Hospital</p>
@@ -94,4 +94,4 @@ const Header = () => {
   );
 };
 
-export default Header
+export default Header;

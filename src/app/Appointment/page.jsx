@@ -9,7 +9,6 @@ export default function AppointmentPage() {
     <div className="bg-white min-h-screen flex flex-col justify-between">
       <Header />
 
-      <div className="pt-30">
 
         <div className="relative h-[250px] w-full flex items-center justify-start px-6 md:px-16 pt-30 overflow-hidden">
           <img
@@ -94,7 +93,6 @@ export default function AppointmentPage() {
             </div>
           </form>
         </main>
-      </div>
 
       <Footer />
     </div>

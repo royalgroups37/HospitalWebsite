@@ -9,7 +9,7 @@ export default function ContactFormPage() {
     <div className="bg-white min-h-screen flex flex-col justify-between">
       <Header />
 
-      <main className="flex-grow flex items-center justify-center px-4 py-10 mt-30">
+      <main className="flex-grow flex items-center justify-center px-4 py-10 mt-5">
         <div className="bg-white border border-gray-500 rounded-lg w-full max-w-4xl p-6 md:p-10">
           <form className="space-y-6">
             {/* Grid Fields */}

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 const TopImagesection = () => (
-  <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden bg-white mt-30">
+  <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden bg-white">
     <Image
       src="/HomepageHeader.jpg"
       alt="Banner Icon"

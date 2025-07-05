@@ -15,9 +15,9 @@ const ServiceDetails = ({ service, onBack }) => {
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center max-w-[1440px] mx-auto px-4 md:px-20 py-10 gap-6">
         {/* Image and Title */}
         <div className="flex items-center gap-4">
-          <div className="w-[120px] h-[120px] relative rounded-full overflow-hidden">
+          <div className="w-[120px] h-[120px] relative overflow-hidden">
             <Image
-              src={service.image || '/default-image.jpg'} // fallback image
+              src={service.image || '/default-image.jpg'}
               alt={service.name}
               layout="fill"
               objectFit="cover"
@@ -80,51 +80,28 @@ const ServiceDetails = ({ service, onBack }) => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full max-w-screen-xl mx-auto px-4 md:px-10 py-10 flex flex-col gap-12">
-        {/* About */}
+      <div className="w-full max-w-7-xl mx-auto px-4 md:px-10 py-10 flex flex-col gap-12">
+        {/* Intro Section */}
         <div className="flex flex-col gap-5">
           <h2 className="text-4xl font-semibold text-[#555]">{service.name}</h2>
           <div className="space-y-2">
-            <p className="text-lg font-medium text-[#212529]">{service.tagline || `Best ${service.name} Hospital`}</p>
-            <p className="text-base font-medium text-[#757272]">{service.description}</p>
+            <p className="text-lg font-medium text-[#212529]">{service.title}</p>
+            <p className="text-base font-medium text-[#757272]">{service.intro}</p>
           </div>
         </div>
 
-        {/* Diseases Treated */}
-        {service.diseases?.length > 0 && (
-          <div className="space-y-4">
-            <h3 className="text-2xl font-semibold text-[#555]">Diseases Treated</h3>
+        {/* Dynamic Sections */}
+        {service.sections?.map((section, index) => (
+          <div className="space-y-4" key={index}>
+            <h3 className="text-2xl font-semibold text-[#555]">{section.heading}</h3>
+            <p className="text-base font-medium text-[#757272]">{section.description}</p>
             <ul className="list-disc pl-5 text-[#757272] space-y-2 text-base font-medium">
-              {service.diseases.map((disease, index) => (
-                <li key={index}>{disease}</li>
+              {section.list.map((item, idx) => (
+                <li key={idx}>{item}</li>
               ))}
             </ul>
           </div>
-        )}
-
-        {/* Treatments & Procedures */}
-        {service.treatments?.length > 0 && (
-          <div className="space-y-4">
-            <h3 className="text-2xl font-semibold text-[#555]">Treatment and Procedures</h3>
-            <ul className="list-disc pl-5 text-[#757272] space-y-2 text-base font-medium">
-              {service.treatments.map((treatment, index) => (
-                <li key={index}>{treatment}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* Technology */}
-        {service.technology?.length > 0 && (
-          <div className="space-y-4">
-            <h3 className="text-2xl font-semibold text-[#555]">Advanced Technology Used</h3>
-            <ul className="list-disc pl-5 text-[#757272] space-y-2 text-base font-medium">
-              {service.technology.map((tech, index) => (
-                <li key={index}>{tech}</li>
-              ))}
-            </ul>
-          </div>
-        )}
+        ))}
       </div>
 
       <Footer />
